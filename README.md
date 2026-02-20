@@ -260,8 +260,6 @@ a, b = comparar()
 
 ---
 
----
-
 ## – Exercício 04 –
 
 Arquivo: `capitulo2/ex04.py`
