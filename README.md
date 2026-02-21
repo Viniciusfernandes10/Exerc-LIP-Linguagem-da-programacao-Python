@@ -280,7 +280,6 @@ IMC | Classificação
 **Teste 1**
 
 Entrada: 
-Entrada: 
 71
 1.70
 
@@ -327,6 +326,63 @@ altura = float(input("Digite sua altura: "))
 
 imc, classificacao = calcular_imc(peso, altura)
 print(f"Seu IMC é {imc:.2f} ({classificacao})")
+
+```
+
+---
+
+## – Exercício 05 –
+
+Arquivo: `capitulo2/ex05.py`
+
+### Enunciado
+
+Crie um programa que solicite ao usuário a inserção de cinco frutas diferentes. Antes da leitura dos dados, crie uma lista vazia chamada frutas. Em seguida, armazene as frutas fornecidas pelo usuário nessa lista e, ao final, imprima a lista completa na tela.
+
+**Teste 1**
+
+Entrada: 
+maçã
+banana
+laranja
+pera
+melancia
+
+Saída: 
+Lista de frutas: ['maçã', 'banana', 'laranja', 'pera', 'melancia']
+
+**Teste 2**
+
+Entrada:
+uva
+abacaxi
+morango
+manga
+kiwi
+
+Saída:
+Entrada: 
+85
+1.60
+
+Saída: 
+Lista de frutas: ['uva', 'abacaxi', 'morango', 'manga', 'kiwi']
+
+
+### Resolução
+
+```python
+def lista_frutas():
+    frutas = []
+
+    for i in range(5):
+        fruta = input()
+        frutas.append(fruta)
+
+    return frutas
+
+frutas = lista_frutas()
+print("Lista de frutas:", frutas)
 
 ```
 
