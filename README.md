@@ -395,6 +395,7 @@ Escreva um programa que solicite ao usuário a inserção de duas coordenadas (x
 
 Entrada: 
 2.5
+
 3.8
 
 Saída: 
@@ -404,10 +405,12 @@ Coordenadas: (2.5, 3.8)
 
 Entrada:
 -1.0
+
 0.0
 
 Saída:
 85
+
 1.60
 
 Saída: 
