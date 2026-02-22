@@ -445,7 +445,9 @@ Crie um dicionário chamado contato. Solicite ao usuário que forneça os dados 
 Entrada: 
 
 Python da Silva
+
 8499999999
+
 Rua da Programação, 123
 
 
@@ -457,7 +459,9 @@ Nome: Python da Silva, Telefone: 8499999999, Endereço: Rua da Programação, 12
 Entrada:
 
 João da Silva
+
 9876543210
+
 Avenida dos Códigos, 456
 
 Saída: 
@@ -483,6 +487,60 @@ endereco = input()
 contato = dict_contato(nome, telefone, endereco)
 
 print(f"Nome: {contato['nome']}, Telefone: {contato['telefone']}, Endereço: {contato['endereco']}.")
+
+```
+
+---
+
+## – Exercício 08 –
+
+Arquivo: `capitulo2/ex08.py`
+
+### Enunciado
+
+Crie, antes da leitura dos números, um conjunto vazio chamado numeros utilizando a função set(). Em seguida, armazene os valores fornecidos pelo usuário nesse conjunto, utilizando o método .add(). Ao final, exiba o conjunto completo na saída.
+
+**Teste 1**
+
+Entrada: 
+
+3
+5
+7
+9
+11
+
+Saída: 
+{3, 5, 7, 9, 11}
+
+**Teste 2**
+
+Entrada:
+
+-2
+0
+4
+6
+8
+
+Saída: 
+{0, 4, 6, 8, -2}
+
+
+### Resolução
+
+```python
+def conjunto_numeros():
+    numeros = set()  
+
+    for i in range(5):
+        valor = int(input())
+        numeros.add(valor)
+
+    return numeros
+
+numeros = conjunto_numeros()
+print(numeros)
 
 ```
 
