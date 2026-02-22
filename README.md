@@ -431,3 +431,59 @@ print("Coordenadas:", coordenadas)
 ```
 
 ---
+
+## – Exercício 07 –
+
+Arquivo: `capitulo2/ex07.py`
+
+### Enunciado
+
+Crie um dicionário chamado contato. Solicite ao usuário que forneça os dados correspondentes às chaves "nome", "telefone" e "endereco". Em seguida, imprima o conteúdo completo do dicionário.
+
+**Teste 1**
+
+Entrada: 
+
+Python da Silva
+8499999999
+Rua da Programação, 123
+
+
+Saída: 
+Nome: Python da Silva, Telefone: 8499999999, Endereço: Rua da Programação, 123.
+
+**Teste 2**
+
+Entrada:
+
+João da Silva
+9876543210
+Avenida dos Códigos, 456
+
+Saída: 
+Nome: João da Silva, Telefone: 9876543210, Endereço: Avenida dos Códigos, 456.
+
+
+### Resolução
+
+```python
+def dict_contato(nome, telefone, endereco):
+    contato = {
+        "nome": nome,
+        "telefone": telefone,
+        "endereco": endereco
+    }
+    return contato
+
+
+nome = input()
+telefone = input()
+endereco = input()
+
+contato = dict_contato(nome, telefone, endereco)
+
+print(f"Nome: {contato['nome']}, Telefone: {contato['telefone']}, Endereço: {contato['endereco']}.")
+
+```
+
+---
