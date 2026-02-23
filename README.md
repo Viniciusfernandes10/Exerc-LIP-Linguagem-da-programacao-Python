@@ -689,3 +689,80 @@ transformar_string()
 ```
 
 ---
+
+## – Exercício 11 –
+
+Arquivo: `capitulo2/ex11.py`
+
+### Enunciado
+
+Você deve criar um programa que verifica se os números em uma lista são pares ou ímpares. A lista possui tamanho 5 e será fornecida pelo usuário. Cada número na lista deve ser avaliado individualmente, sem o uso de estruturas de repetição (como loops). O programa deve exibir na tela se cada número é par ou ímpar.
+
+**Teste 1**
+
+4
+9
+12
+17
+6
+
+Saída: 
+O número 4 é par.
+O número 9 é ímpar.
+O número 12 é par.
+O número 17 é ímpar.
+O número 6 é par.
+
+**Teste 2**
+
+Entrada:
+
+5
+6
+7
+1
+2 
+
+Saída: 
+O número 5 é ímpar.
+O número 6 é par.
+O número 7 é ímpar.
+O número 1 é ímpar.
+O número 2 é par.
+
+### Resolução
+
+```python
+def par_ou_impar():
+  numero1 = int(input())
+  numero2 = int(input())
+  numero3 = int(input())
+  numero4 = int(input())
+  numero5 = int(input())
+
+  if numero1 % 2 == 0:
+    print(f"O número {numero1} é par.")
+  else:
+    print(f"O número {numero1} é ímpar.")
+
+  if numero2 % 2 == 0:
+    print(f"O número {numero2} é par.")
+  else:
+    print(f"O número {numero2} é ímpar.")
+
+  if numero3 % 2 == 0:
+    print(f"O número {numero3} é par.")
+  else:
+    print(f"O número {numero3} é ímpar.")
+
+  if numero4 % 2 == 0:
+    print(f"O número {numero4} é par.")
+  else:
+    print(f"O número {numero4} é ímpar.")
+
+  if numero5 % 2 == 0:
+    print(f"O número {numero5} é par.")
+  else:
+    print(f"O número {numero5} é ímpar.")
+
+par_ou_impar()
