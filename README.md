@@ -642,35 +642,31 @@ Concatenar as strings: combine a primeira e a segunda string em uma única strin
 
 Imprimir o resultado: exiba a string concatenada na tela.
 
-**Teste 1**
+## Teste 1
 
-Entrada: 
+**Entrada:**
 
-Olá, mundo.
+Olá, mundo.  
+Mundo  
 
-Mundo
+**Saída:**
 
-Saída: 
-OLÁ, MUNDO.
+OLÁ, MUNDO.  
+mundo  
+OLÁ, MUNDO. mundo  
 
-mundo
+## Teste 2
 
-OLÁ, MUNDO. mundo
+**Entrada:**
 
-**Teste 2**
+A Verdade Está Lá Fora, Neo.  
+Mas Você Tem Que Escolher Se Quer Vê-la.  
 
-Entrada:
+**Saída:**
 
-A Verdade Está Lá Fora, Neo.
-
-Mas Você Tem Que Escolher Se Quer Vê-la.
-
-Saída: 
-A VERDADE ESTÁ LÁ FORA, NEO.
-
-mas você tem que escolher se quer vê-la.
-
-A VERDADE ESTÁ LÁ FORA, NEO. mas você tem que escolher se quer vê-la.
+A VERDADE ESTÁ LÁ FORA, NEO.  
+mas você tem que escolher se quer vê-la.  
+A VERDADE ESTÁ LÁ FORA, NEO. mas você tem que escolher se quer vê-la.  
 
 ### Resolução
 
@@ -696,73 +692,82 @@ Arquivo: `capitulo2/ex11.py`
 
 ### Enunciado
 
-Você deve criar um programa que verifica se os números em uma lista são pares ou ímpares. A lista possui tamanho 5 e será fornecida pelo usuário. Cada número na lista deve ser avaliado individualmente, sem o uso de estruturas de repetição (como loops). O programa deve exibir na tela se cada número é par ou ímpar.
+Você deve criar um programa que verifica se os números em uma lista são pares ou ímpares.  
+A lista possui tamanho 5 e será fornecida pelo usuário.  
+Cada número deve ser avaliado individualmente, sem o uso de estruturas de repetição (loops).  
+O programa deve exibir na tela se cada número é par ou ímpar.
 
-**Teste 1**
+### Teste 1
 
-4
-9
-12
-17
-6
+**Entrada:**
 
-Saída: 
-O número 4 é par.
-O número 9 é ímpar.
-O número 12 é par.
-O número 17 é ímpar.
-O número 6 é par.
+4  
+9  
+12  
+17  
+6  
 
-**Teste 2**
+**Saída:**
 
-Entrada:
+O número 4 é par.  
+O número 9 é ímpar.  
+O número 12 é par.  
+O número 17 é ímpar.  
+O número 6 é par.  
 
-5
-6
-7
-1
-2 
+### Teste 2
 
-Saída: 
-O número 5 é ímpar.
-O número 6 é par.
-O número 7 é ímpar.
-O número 1 é ímpar.
-O número 2 é par.
+**Entrada:**
+
+5  
+6  
+7  
+1  
+2  
+
+**Saída:**
+
+O número 5 é ímpar.  
+O número 6 é par.  
+O número 7 é ímpar.  
+O número 1 é ímpar.  
+O número 2 é par.  
 
 ### Resolução
 
 ```python
 def par_ou_impar():
-  numero1 = int(input())
-  numero2 = int(input())
-  numero3 = int(input())
-  numero4 = int(input())
-  numero5 = int(input())
+    numero1 = int(input())
+    numero2 = int(input())
+    numero3 = int(input())
+    numero4 = int(input())
+    numero5 = int(input())
 
-  if numero1 % 2 == 0:
-    print(f"O número {numero1} é par.")
-  else:
-    print(f"O número {numero1} é ímpar.")
+    if numero1 % 2 == 0:
+        print(f"O número {numero1} é par.")
+    else:
+        print(f"O número {numero1} é ímpar.")
 
-  if numero2 % 2 == 0:
-    print(f"O número {numero2} é par.")
-  else:
-    print(f"O número {numero2} é ímpar.")
+    if numero2 % 2 == 0:
+        print(f"O número {numero2} é par.")
+    else:
+        print(f"O número {numero2} é ímpar.")
 
-  if numero3 % 2 == 0:
-    print(f"O número {numero3} é par.")
-  else:
-    print(f"O número {numero3} é ímpar.")
+    if numero3 % 2 == 0:
+        print(f"O número {numero3} é par.")
+    else:
+        print(f"O número {numero3} é ímpar.")
 
-  if numero4 % 2 == 0:
-    print(f"O número {numero4} é par.")
-  else:
-    print(f"O número {numero4} é ímpar.")
+    if numero4 % 2 == 0:
+        print(f"O número {numero4} é par.")
+    else:
+        print(f"O número {numero4} é ímpar.")
 
-  if numero5 % 2 == 0:
-    print(f"O número {numero5} é par.")
-  else:
-    print(f"O número {numero5} é ímpar.")
+    if numero5 % 2 == 0:
+        print(f"O número {numero5} é par.")
+    else:
+        print(f"O número {numero5} é ímpar.")
 
 par_ou_impar()
+
+---
