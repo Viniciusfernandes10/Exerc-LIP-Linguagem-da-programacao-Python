@@ -3,6 +3,15 @@
 Este repositório contém exercícios de lógica de programação resolvidos em Python,
 organizados por capítulos.
 
+# Sumário
+
+**Capítulo 1: Introdução à programação em Python**  
+**Capítulo 2: Tipos de dados e Estruturas Condicionais**  
+**Capítulo 3: Operadores e Expressões**  
+**Capítulo 4: Controle de Fluxo e Números Aleatórios**  
+**Capítulo 5: Funções e Modularização**  
+**Capítulo 6: Manipulação de Strings**  
+
 📘 **Livro base:**  
 **Python Básico - Um Guia para Iniciantes e Universitários**  
 ✍️ Autor: Helton Maia
